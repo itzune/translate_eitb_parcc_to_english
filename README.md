@@ -1,6 +1,6 @@
 # translate_eitb_parcc_to_english
 
-This repository contains a Python script that translates the [EITB PARCC by Vicomtech eu-es parallel corpus](https://huggingface.co/datasets/Helsinki-NLP/eitb_parcc) from Spanish to English.
+This repository contains a Python script that translates the [EITB PARCC by Vicomtech eu-es parallel corpus](https://huggingface.co/datasets/Helsinki-NLP/eitb_parcc) from Spanish to English, using [Google MADLAD400] translation model.
 
 You can find the (partially) translated dataset [here](https://huggingface.co/datasets/itzune/eitb_parcc_en).
 

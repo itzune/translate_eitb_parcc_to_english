@@ -8,7 +8,9 @@ import os
 dataset = load_dataset("Helsinki-NLP/eitb_parcc", split="train")
 
 # Load the model and tokenizer
-model_name = 'google/madlad400-10b-mt'
+# Model 'google/madlad400-10b-mt' is very large and may not fit in memory
+# despite it has very good translation quality. For large datasets, use a smaller model.
+model_name = 'google/madlad400-3b-mt'
 model = T5ForConditionalGeneration.from_pretrained(model_name, device_map="auto")
 tokenizer = T5Tokenizer.from_pretrained(model_name)
 
