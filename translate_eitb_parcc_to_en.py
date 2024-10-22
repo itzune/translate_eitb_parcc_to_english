@@ -19,7 +19,7 @@ def translate(text):
     input_ids = tokenizer(input_text, return_tensors="pt").input_ids.to(model.device)
     outputs = model.generate(input_ids=input_ids, max_length=128)
     translation = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    print("EU: " + translation)
+    print("EN: " + translation)
     return translation
 
 # Function to process batch
